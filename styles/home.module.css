@@ -1,0 +1,276 @@
+.banner {
+  /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
+  background-image: url("../public/assets/cover.png");
+  height: 100vh;
+  padding-top: 5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__form {
+  background-color: rgba(255, 255, 255, 0.911);
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.countsAndType {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.counts {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .banner__form {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner {
+    padding: 3rem 0 2rem 0;
+  }
+}
+
+.flexVerical {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* searchField */
+.searchField {
+  font-size: 1rem;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  opacity: 0.9;
+  border-radius: 5px;
+  margin: 0.3rem;
+  color: rgb(105, 105, 105);
+  transition: all 0.2s ease-in-out;
+}
+
+/* popular_dests */
+.destsHeader {
+  margin: 2rem 0 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.popular_dests {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.destMore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.popular_dests::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.popular_dests {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* topFaresContainer */
+.topFaresContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top_fares {
+  display: flex;
+  justify-content: center;
+}
+
+.topFares {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* row-gap: 1rem; */
+  /* justify-items: center; */
+  width: fit-content;
+}
+
+@media screen and (max-width: 1200px) {
+  .topFares {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .topFares {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .topFares {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* airlines */
+.topAirlinesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topAirlines {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.airlineCardContainer {
+  display: inline;
+}
+
+@media screen and (max-width: 950px) {
+  .topAirlines {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .topAirlines {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .topAirlines {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* homePage__txt */
+.homePage__txt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  opacity: 0.9;
+  margin: 1rem 0rem 5rem 0;
+  padding: 0 1rem;
+}
+
+.aboutUs {
+  max-width: 786px;
+}
+
+/* skeletonSlider */
+.skeletonSlider {
+  display: flex;
+  /* gap: 1rem; */
+  overflow-x: scroll;
+}
+
+/* DestSkeleton */
+.destSkeleton {
+  width: 250px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.skeletonSlider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.skeletonSlider {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* fareSkeleton */
+.fareSkeletonForPC {
+  width: 550px;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: block;
+  margin: 10px;
+}
+
+.fareSkeletonForPhone {
+  width: 280px;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: none;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .fareSkeletonForPC {
+    display: none;
+  }
+
+  .fareSkeletonForPhone {
+    display: block;
+  }
+}
+
+.fareSkeletonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* row-gap: 1rem; */
+  /* justify-items: center; */
+  width: fit-content;
+}
+
+@media screen and (max-width: 1200px) {
+  .fareSkeletonContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .fareSkeletonContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .fareSkeletonContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.airlineSkeleton {
+  margin: 10px;
+  width: 140px;
+  height: 70px;
+  border-radius: 5px;
+  overflow: hidden;
+}

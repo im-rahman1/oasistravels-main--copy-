@@ -1,0 +1,119 @@
+.header {
+  background: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+  padding-right: 0;
+  z-index: 1500;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.801);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  width: 150px;
+}
+
+.logoLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 786px) {
+  .logoLinks {
+    display: none;
+  }
+
+  .logInBtn {
+    display: none;
+  }
+
+  .dvdr {
+    display: none;
+  }
+}
+
+.simpleLink {
+  color: rgb(255, 255, 255);
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+
+.simpleLink:hover {
+  color: #636363;
+}
+
+.highlightedLink {
+  color: #ffffffe1;
+  background-color: #d4d4d441;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  /* padding: 3px 10px 0 5px; */
+}
+
+.logo {
+  /* padding-left: 0.7rem; */
+}
+
+.menuIconContainer {
+  display: none;
+  margin-right: 20px;
+}
+
+.divider {
+  display: block;
+  width: 100%;
+}
+
+.numberContainer {
+  display: block;
+}
+
+.number {
+  color: white;
+  display: flex;
+  gap: 5px;
+  margin-right: 1rem;
+  transition: 0.15s all ease-in-out;
+}
+
+@media screen and (max-width: 786px) {
+  .menuIconContainer {
+    display: block;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .numberContainer {
+    display: none;
+  }
+}

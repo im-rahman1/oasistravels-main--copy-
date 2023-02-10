@@ -1,0 +1,85 @@
+.destinationsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  width: 100%;
+  align-items: center;
+}
+
+.destinations {
+  display: grid;
+  max-width: 1024px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* .destPage__destinations > destCard {
+  color: blue;
+} */
+
+@media screen and (max-width: 900px) {
+  .destinations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .destinations {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.bannerImg {
+  margin-top: 4.5rem;
+  width: 100%;
+  min-height: 200px;
+}
+
+.bannerImg > img {
+  width: 100%;
+  min-height: 200px;
+}
+
+.bannerPlaceholder {
+  background-image: url("/assets/Placeholder.png");
+  margin-top: 4.5rem;
+  min-height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+  .bannerImg {
+    min-height: 150px;
+  }
+
+  .bannerImg > img {
+    width: 100%;
+    min-height: 150px;
+  }
+}
+
+
+/* Skeleton */
+.skeletonContainer {
+  display: grid;
+  max-width: 1024px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 900px) {
+  .skeletonContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .skeletonContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.destSkeleton {
+  width: 250px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 1rem;
+}

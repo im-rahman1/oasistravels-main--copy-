@@ -1,0 +1,55 @@
+/* airlines */
+.airlinesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.airlines {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.airlineCardContainer {
+  display: inline;
+}
+
+@media screen and (max-width: 950px) {
+  .airlines {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .airlines {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .airlines {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* loader */
+.loaderContainer {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.airlineSkeleton {
+  margin: 10px;
+  width: 140px;
+  height: 70px;
+  border-radius: 5px;
+  overflow: hidden;
+}

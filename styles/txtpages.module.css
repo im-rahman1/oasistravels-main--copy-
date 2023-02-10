@@ -1,0 +1,19 @@
+.txtPage {
+  max-width: 700px;
+  margin: 7rem 2rem 3rem 6rem;
+}
+
+.faqPage {
+  margin: 7rem 2rem 3rem 6rem;
+  max-width: 900px;
+}
+
+@media screen and (max-width: 786px) {
+  .txtPage {
+    margin: 7rem 2rem 3rem 2rem;
+  }
+
+  .faqPage {
+    margin: 7rem 2rem 3rem 2rem;
+  }
+}

@@ -1,0 +1,236 @@
+.faresPage {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 3.9rem; */
+}
+
+.bannerImg {
+  margin-top: 4.5rem;
+  width: 100%;
+  min-height: 200px;
+}
+
+.bannerImg > img {
+  width: 100%;
+  min-height: 200px;
+}
+
+.bannerPlaceholder {
+  background-image: url('/assets/Placeholder.png');
+  margin-top: 4.5rem;
+  min-height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+  .bannerImg {
+    min-height: 150px;
+  }
+
+  .bannerImg > img {
+    width: 100%;
+    min-height: 150px;
+  }
+}
+
+.banner {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.808);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.faresContainer {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* row-gap: 2rem; */
+  margin: 4rem 0 1rem 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .faresContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .faresContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .faresContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.banner__icon {
+  margin: 0 1rem;
+}
+
+/* details */
+.details {
+  max-width: 850px;
+  margin: 1rem;
+}
+
+/* fareSkeleton */
+.fareSkeletonForPC {
+  width: 550px;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: block;
+  margin: 10px;
+}
+
+.fareSkeletonForPhone {
+  width: 280px;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: none;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .fareSkeletonForPC {
+    display: none;
+  }
+
+  .fareSkeletonForPhone {
+    display: block;
+  }
+}
+
+.fareSkeletonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* row-gap: 1rem; */
+  /* justify-items: center; */
+  width: fit-content;
+}
+
+@media screen and (max-width: 1200px) {
+  .fareSkeletonContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.displayNone {
+  display: none;
+}
+
+/* airlineFooter */
+.airlineFooterContainer {
+  margin: 1rem;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.airlineFooter__cards {
+  display: flex;
+  gap: 1rem;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.airlineFooter__card {
+  margin: 1rem;
+  border-radius: 10px;
+  width: fit-content;
+  text-align: left;
+}
+
+.card__img {
+  display: flex;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.card__img > img {
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.card__img > img:hover {
+  transform: scale(1.07);
+}
+
+.card__txt {
+  max-width: 400px;
+}
+
+@media screen and (max-width: 800px) {
+  .airlineFooter__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .airlineFooter__card {
+    text-align: center;
+  }
+
+  .card__img {
+    max-width: 450px;
+  }
+}
+
+/* footerBanner */
+
+.bannerImg {
+  margin-top: 4.5rem;
+  width: 100%;
+  min-height: 200px;
+}
+
+.bannerImg > img {
+  width: 100%;
+  min-height: 200px;
+}
+
+.bannerPlaceholder {
+  background-image: url('/assets/Placeholder.png');
+  margin-top: 4.5rem;
+  min-height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+  .bannerImg {
+    min-height: 150px;
+  }
+
+  .bannerImg > img {
+    width: 100%;
+    min-height: 150px;
+  }
+}
+.footerBanner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footerBanner > .bannerImg {
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 1020px;
+  margin: 1.5rem 0 4rem 0;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+@media screen and (max-width: 1020px) {
+  .footerBanner > .bannerImg {
+    width: 100%;
+    border-radius: 0px;
+  }
+}

@@ -1,0 +1,57 @@
+.sideBarHeader {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.child {
+  /* margin-top: 70px; */
+}
+
+/* drawer */
+.drawer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.drawerLinks {
+  margin-top: 78px;
+}
+
+.fab1 {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  margin: 0 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #128c7e;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  color: white;
+  box-shadow: rgba(91, 91, 91, 0.2) 0px 8px 24px;
+}
+
+.fab2 {
+  position: fixed;
+  bottom: 3.5rem;
+  right: 0%;
+  margin: 0 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fb5d5d;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  color: white;
+  box-shadow: rgba(91, 91, 91, 0.2) 0px 8px 24px;
+}

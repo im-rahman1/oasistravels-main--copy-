@@ -1,0 +1,85 @@
+.footer {
+  background-color: #0c0c0c;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  padding: 4rem 1.5rem 4rem 1.5rem;
+  justify-items: center;
+}
+
+.footer__contactUs {
+  color: rgba(255, 255, 255, 0.77);
+  max-width: 15rem;
+  margin: 1rem 0;
+}
+
+.footer__contactUs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer__contact_grid {
+  display: flex;
+  gap: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo {
+  width: 150px
+}
+
+.footer__logo {
+  /* width: 7rem; */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+/* footer__links */
+.footer__links {
+  color: #fff;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+/* followUs */
+.followUs {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.followUs__links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tiktok__link {
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+  transition: all 0.1s ease-in-out;
+}
+
+.tiktok__link:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,18 @@
+.airlineLogoContainer {
+  width: 150px;
+  height: 80px;
+  border: 1px solid #8080803f;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.8rem;
+}
+
+.airlineLogo {
+  width: 100%;
+  height: 40px;
+}

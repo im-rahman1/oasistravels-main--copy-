@@ -1,0 +1,70 @@
+.beatMyQuotePage {
+  margin: 6rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.beatMyQuotePage {
+  margin: 6rem 0 3rem 0;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  gap: 1rem;
+  max-width: 1300px;
+}
+
+.sendInquiry__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  max-width: 560px;
+}
+
+.msgField {
+  width: 560px;
+}
+
+.offerImgForMobile {
+  display: none;
+}
+
+.offerImgForMobile> img, .offerImgForPC>img {
+  width: 100%
+}
+
+@media screen and (max-width: 900px) {
+  .beatMyQuotePage {
+    margin: 6rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+
+  .offerImgForPC {
+    display: none;
+  }
+
+  .offerImgForMobile {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  .sendInquiry__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 1rem;
+    width: 320px;
+  }
+  .msgField {
+    width: 320px;
+  }
+}
